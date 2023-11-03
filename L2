@@ -1,0 +1,19 @@
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+var R float32
+
+func S(r float32) float32 {
+	return r * r * math.Pi
+}
+func main() {
+	fmt.Println("请输入圆的半径：")
+	fmt.Scanf("%f\n", &R)
+	fmt.Println("圆的面积是：")
+	result := S(R)
+	fmt.Print(result)
+}
