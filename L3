@@ -1,0 +1,25 @@
+package main
+
+import "fmt"
+
+var a int
+var sum int = 0
+
+func judgment(x int) int {
+	for n := 1; n <= x; n++ {
+		if x%n == 0 {
+			sum += 1
+		}
+	}
+	if sum == 2 {
+		fmt.Println("该数是素数")
+	} else {
+		fmt.Println("该数不是素数")
+	}
+	return 0
+}
+func main() {
+	fmt.Println("请输入一个整数：")
+	fmt.Scanf("%d\n", &a)
+	judgment(a)
+}
